@@ -107,7 +107,7 @@ export default function MobileMenu() {
               <MainCallButton className="mt-12 mb-2" phone="991985871" />
               <SocialContacts phone="991985871" />
               <p className="mt-4 text-xs opacity-50 italic text-center mx-4">
-                "Vaše zadvoljstvo naša je zadaća!"
+                &quot;Vaše zadvoljstvo naša je zadaća!&quot;
               </p>
             </motion.div>
           </motion.div>

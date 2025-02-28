@@ -44,7 +44,7 @@ export default function Hero() {
           <span className=" font-semibold"> sedam dana</span> u tjednu!
         </p>
         <p className="opacity-50 italic text-sm">
-          "Vaše zadovoljstvo naša je zadaća!"
+          &quot;Vaše zadovoljstvo naša je zadaća!&quot;
         </p>
       </div>
 

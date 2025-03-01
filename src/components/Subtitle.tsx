@@ -11,7 +11,9 @@ export default function Subtitle({ first, second, className }: ISubtitle) {
         className ? className : ""
       } `}
     >
-      <span className="text-yellowPrimary tracking-wide ">{first}</span>
+      <span className="text-yellowPrimary tracking-wide font-semibold ">
+        {first}
+      </span>
       <span className="font-bold tracking-widest">{second}</span>
     </h2>
   );

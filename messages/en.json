@@ -1,0 +1,65 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "message": "Your satisfaction is our mission",
+    "transferi": "Transfers",
+    "ekskurzije": "Excursions"
+  },
+  "Hero": {
+    "message": "Your satisfaction is our mission",
+    "open": "We are open",
+    "sevenDays": "seven days",
+    "aWeek": "a week",
+    "learnMore": "Learn more"
+  },
+  "AboutUs": {
+    "title1": "meet",
+    "title2": "us",
+    "message1": "We are a family-owned company with years of experience in passenger transportation. Our mission is to ensure comfort and satisfaction for every traveler.",
+    "message2": "Behind us are years of dedicated work and thousands of happy customers who trust us!",
+    "message3": "Contact us with confidence!"
+  },
+  "Services": {
+    "title1": "our",
+    "title2": "services",
+    "message1": "Looking for a reliable taxi, airport transfer, or the perfect excursion? You’re in the right place!",
+    "message2": "We are at your service",
+    "message3": "7 days a week!",
+    "descriptionTrans": "Reliable transfers for every occasion. We provide comfortable transportation to airports in the region and abroad.",
+    "descriptionEks": "Discover exciting excursions along the Istrian Riviera. Treat yourself and your loved ones to an unforgettable experience.",
+    "descriptionBike": "Bike transport to your desired location – perfect for cycling enthusiasts and sports clubs. Embark on your adventure!"
+  },
+  "ContactForm": {
+    "title1": "Send",
+    "title2": "inquiry",
+    "usluga": "Service you are interested in",
+    "placeholder": "Select",
+    "transferi": "Transfers",
+    "ekskurzije": "Excursions",
+    "name": "Your name",
+    "namePlaceholder": "First and last name",
+    "message": "Your message",
+    "send": "send",
+    "workingDays": "Mon-Sun"
+  },
+  "Footer": {
+    "copyright": "All rights reserved"
+  },
+  "Transfers": {
+    "title": "transfers",
+    "firstParagraph": "Need reliable transportation to the airport or a professional business transfer? Taxi Poreč City takes care of all your needs.",
+    "secondaParagprah": "Enjoy the comfort of our impeccably maintained vehicles and let our friendly staff make every journey a pleasant experience."
+  },
+  "Excursions": {
+    "title": "excursions",
+    "firstParagraph": "Discover the charms of Istria with unforgettable excursions from Poreč City Taxi.",
+    "secondaParagprah": "Want to explore sunny Kamenjak, walk the walls of Motovun, or uncover the hidden treasures of the region? Contact us with confidence and book your perfect excursion today!"
+  },
+  "BikeTaxi": {
+    "firstParagraph": "Are you a passionate cycling enthusiast? Looking for transportation that supports your adventure?",
+    "secondaParagprah": "Let us handle the transport of your bikes, so you can focus on enjoying a carefree ride through the enchanting Istrian landscapes."
+  },
+  "sendRequest": "Send inquiry",
+  "mainCallButton": "Order a taxi",
+  "learnMore": "Learn more"
+}

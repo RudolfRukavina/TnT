@@ -1,0 +1,65 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "message": "Ihre Zufriedenheit ist unsere Aufgabe",
+    "transferi": "Transfers",
+    "ekskurzije": "Ausflüge"
+  },
+  "Hero": {
+    "message": "Ihre Zufriedenheit ist unsere Aufgabe",
+    "open": "Wir sind geöffnet",
+    "sevenDays": "sieben Tage",
+    "aWeek": "die Woche",
+    "learnMore": "Erfahren Sie mehr"
+  },
+  "AboutUs": {
+    "title1": "lernen Sie",
+    "title2": "uns kennen",
+    "message1": "Wir sind ein Familienunternehmen mit langjähriger Erfahrung im Personentransport. Unsere Mission ist es, jedem Reisenden Komfort und Zufriedenheit zu bieten.",
+    "message2": "Hinter uns stehen Jahre engagierter Arbeit und Tausende zufriedener Kunden, die uns vertrauen!",
+    "message3": "Kontaktieren Sie uns mit Vertrauen!"
+  },
+  "Services": {
+    "title1": "unsere",
+    "title2": "Dienstleistungen",
+    "message1": "Suchen Sie ein zuverlässiges Taxi, einen Flughafentransfer oder den perfekten Ausflug? Sie sind hier genau richtig!",
+    "message2": "Wir stehen Ihnen zur Verfügung",
+    "message3": "7 Tage die Woche!",
+    "descriptionTrans": "Zuverlässige Transfers für jede Gelegenheit. Wir bieten komfortablen Transport zu Flughäfen in der Region und ins Ausland.",
+    "descriptionEks": "Entdecken Sie aufregende Ausflüge entlang der istrischen Riviera. Gönnen Sie sich und Ihren Liebsten ein unvergessliches Erlebnis.",
+    "descriptionBike": "Fahrradtransport an Ihren Wunschort – perfekt für Fahrradliebhaber und Sportvereine. Starten Sie Ihr Abenteuer!"
+  },
+  "ContactForm": {
+    "title1": "Senden Sie",
+    "title2": "eine Anfrage",
+    "usluga": "Dienst, an dem Sie interessiert sind",
+    "placeholder": "Auswählen",
+    "transferi": "Transfers",
+    "ekskurzije": "Ausflüge",
+    "name": "Ihr Name",
+    "namePlaceholder": "Vor- und Nachname",
+    "message": "Ihre Nachricht",
+    "send": "senden",
+    "workingDays": "Mo-So"
+  },
+  "Footer": {
+    "copyright": "Alle Rechte vorbehalten"
+  },
+  "Transfers": {
+    "title": "transfers",
+    "firstParagraph": "Brauchen Sie einen zuverlässigen Transport zum Flughafen oder einen professionellen Geschäftstransfer? Taxi Poreč City kümmert sich um all Ihre Bedürfnisse.",
+    "secondaParagprah": "Genießen Sie den Komfort unserer einwandfrei gepflegten Fahrzeuge und lassen Sie sich von unserem freundlichen Personal jedes Reiseerlebnis angenehm gestalten."
+  },
+  "Excursions": {
+    "title": "ausflüge",
+    "firstParagraph": "Entdecken Sie den Zauber Istriens mit unvergesslichen Ausflügen von Poreč City Taxi.",
+    "secondaParagprah": "Möchten Sie das sonnige Kamenjak erkunden, über die Mauern von Motovun spazieren oder die verborgenen Schätze der Region kennenlernen? Kontaktieren Sie uns vertrauensvoll und buchen Sie noch heute Ihren perfekten Ausflug!"
+  },
+  "BikeTaxi": {
+    "firstParagraph": "Sind Sie ein leidenschaftlicher Fahrradliebhaber? Suchen Sie einen Transport, der Ihr Abenteuer unterstützt?",
+    "secondaParagprah": "Überlassen Sie uns die Sorge um den Transport Ihrer Fahrräder und widmen Sie sich sorgenfrei dem Genuss einer Fahrt durch die bezaubernden istrischen Landschaften."
+  },
+  "sendRequest": "Anfrage senden",
+  "mainCallButton": "Taxi bestellen",
+  "learnMore": "Erfahren Sie mehr"
+}

@@ -1,6 +1,12 @@
 "use client";
 import { HiOutlinePhone } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
+
+const variants = {
+  solid: "bg-yellowPrimary",
+  transparent: "bg-transparent border-bgColor border",
+};
 
 export default function MainCallButton({
   phone,
@@ -11,10 +17,8 @@ export default function MainCallButton({
   type?: "transparent" | "solid";
   className?: string;
 }) {
-  const variants = {
-    solid: "bg-yellowPrimary",
-    transparent: "bg-transparent border-bgColor border",
-  };
+  const t = useTranslations();
+
   return (
     <motion.a
       whileHover={{ scale: 0.97 }}
@@ -25,7 +29,7 @@ export default function MainCallButton({
       }  px-2  py-1 rounded-lg text-bgColor font-semibold flex items-center gap-1`}
     >
       <HiOutlinePhone />
-      NARUCI TAXI
+      {t("mainCallButton")}
     </motion.a>
   );
 }

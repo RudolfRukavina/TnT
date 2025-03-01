@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { TbMenuDeep } from "react-icons/tb";
@@ -8,9 +8,12 @@ import { usePathname } from "next/navigation";
 import MainCallButton from "@/components/MainCallButton";
 import SocialContacts from "@/components/SocialContacts";
 import Logo from "@/components/Logo";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 export default function MobileMenu() {
   const [isOpen, setOpen] = useState<boolean>(false);
+  const t = useTranslations("Navigation");
 
   const pathname = usePathname();
 
@@ -64,14 +67,14 @@ export default function MobileMenu() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             ref={bgRef}
-            className="w-full bg-bgColor/20 backdrop-blur-sm fixed z-0 inset-0 h-screen "
+            className="w-full bg-bgColor/20 backdrop-blur-sm fixed z-30 inset-0 h-screen "
           >
             <motion.div
               initial={{ opacity: 0, right: -200 }}
               animate={{ opacity: 1, right: 0 }}
               exit={{ right: -200 }}
               transition={{ duration: 0.3, type: "tween" }}
-              className="h-full z-20  fixed bg-bgColor border-l flex-col border-textColor border-opacity-30 top-0 right-0 w-1/2 flex items-center justify-center "
+              className="h-full z-30  fixed bg-bgColor border-l flex-col border-textColor border-opacity-30 top-0 right-0 w-1/2 flex items-center justify-center "
             >
               <div className="flex flex-col mb-16 items-center">
                 <Logo />
@@ -79,26 +82,26 @@ export default function MobileMenu() {
               </div>
               <ul className="flex flex-col items-center gap-2 font-semibold text-xl">
                 <li className="flex flex-col">
-                  <Link href="/">Pocetna</Link>
-                  {pathname === "/" && (
+                  <Link href="/">{t("home")}</Link>
+                  {["/hr", "/en", "/de", "/it"].includes(pathname) && (
                     <div className="h-[2px] bg-yellowPrimary w-4 mx-auto"></div>
                   )}
                 </li>
                 <li className="flex flex-col">
-                  <Link href="/transferi">Transferi</Link>
-                  {pathname === "/transferi" && (
+                  <Link href="/transferi">{t("transferi")}</Link>
+                  {pathname.includes("transferi") && (
                     <div className="h-[2px] bg-yellowPrimary w-4 mx-auto"></div>
                   )}
                 </li>
                 <li className="flex flex-col">
-                  <Link href="/ekskurzije">Ekskurzije</Link>
-                  {pathname === "/ekskurzije" && (
+                  <Link href="/ekskurzije">{t("ekskurzije")}</Link>
+                  {pathname.includes("ekskurzije") && (
                     <div className="h-[2px] bg-yellowPrimary w-4 mx-auto"></div>
                   )}
                 </li>
                 <li className="flex flex-col">
                   <Link href="/biciklisti">Bike Taxi</Link>
-                  {pathname === "/biciklisti" && (
+                  {pathname.includes("biciklisti") && (
                     <div className="h-[2px] bg-yellowPrimary w-4 mx-auto"></div>
                   )}
                 </li>
@@ -107,7 +110,7 @@ export default function MobileMenu() {
               <MainCallButton className="mt-12 mb-2" phone="991985871" />
               <SocialContacts phone="991985871" />
               <p className="mt-4 text-xs opacity-50 italic text-center mx-4">
-                &quot;Vaše zadvoljstvo naša je zadaća!&quot;
+                &quot;{t("message")}!&quot;
               </p>
             </motion.div>
           </motion.div>

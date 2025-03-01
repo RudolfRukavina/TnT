@@ -1,0 +1,65 @@
+{
+  "Navigation": {
+    "home": "Početna",
+    "message": "Vaše zadovoljstvo naša je zadaća",
+    "transferi": "Transferi",
+    "ekskurzije": "Ekskurzije"
+  },
+  "Hero": {
+    "message": "Vaše zadovoljstvo naša je zadaća",
+    "open": "Otvoreni smo",
+    "sevenDays": "sedam dana",
+    "aWeek": "u tjednu",
+    "learnMore": "Saznaj više"
+  },
+  "AboutUs": {
+    "title1": "upoznajte",
+    "title2": "nas",
+    "message1": "Mi smo obiteljska tvrtka s dugogodišnjim iskustvom u prijevozu putnika. Naša misija je osigurati svakom putniku udobnost i zadovoljstvo.",
+    "message2": "Iza nas stoje godine predanog rada i tisuće sretnih korisnika koji nam vjeruju!",
+    "message3": "Obratite nam se s povjerenjem!"
+  },
+  "Services": {
+    "title1": "naše",
+    "title2": "usluge",
+    "message1": "Tražite pouzdan taxi, prijevoz do zračne luke ili savršen izlet? Na pravom ste mjestu!",
+    "message2": "Stojimo vam na raspolaganju",
+    "message3": "7 dana u tjednu!",
+    "descriptionTrans": "Pouzdani transferi za svaku priliku. Osiguravamo udoban prijevoz do zračnih luka u regiji i inozemstvu.",
+    "descriptionEks": "Otkrijte uzbudljive izlete diljem istarske rivijere. Podarite sebi i svojim najdražima nezaboravno iskustvo.",
+    "descriptionBike": "Prijevoz bicikala na željenu lokaciju – savršeno za ljubitelje biciklizma i sportske klubove. Prepustite se avanturi!"
+  },
+  "ContactForm": {
+    "title1": "Pošaljite",
+    "title2": "upit",
+    "usluga": "Usluga za koju ste zainteresirani",
+    "placeholder": "Odaberi",
+    "transferi": "Transferi",
+    "ekskurzije": "Ekskurzije",
+    "name": "Vaše ime",
+    "namePlaceholder": "Ime i prezime",
+    "message": "Vaša poruka",
+    "send": "pošalji",
+    "workingDays": "pon-ned"
+  },
+  "Footer": {
+    "copyright": "Sva prava pridržana"
+  },
+  "Transfers": {
+    "title": "transferi",
+    "firstParagraph": "Trebate pouzdan prijevoz do zračne luke ili profesionalni poslovni transfer? Taxi Poreč City brine o svim vašim potrebama.",
+    "secondaParagprah": "Uživajte u udobnosti naših besprijekorno održavanih vozila i prepustite se ljubaznom osoblju koje čini svako putovanje ugodnim iskustvom."
+  },
+  "Excursions": {
+    "title": "Ekskurzije",
+    "firstParagraph": "Otkrijte čari Istre uz nezaboravne ekskurzije s Poreč City Taxijem.",
+    "secondaParagprah": "Želite li istražiti sunčani Kamenjak, šetati zidinama Motovuna ili upoznati skrivena blaga regije? Obratite nam se s povjerenjem i rezervirajte svoj savršeni izlet već danas!"
+  },
+  "BikeTaxi": {
+    "firstParagraph": "Strastveni ste ljubitelj biciklizma? Tražite prijevoz koji podržava vašu avanturu?",
+    "secondaParagprah": "Prepustite nama brigu o prijevozu vaših bicikala, a vi se bezbrižno posvetite uživanju u vožnji kroz očaravajuće istarske krajolike."
+  },
+  "sendRequest": "Pošalji upit",
+  "mainCallButton": "Naruči taxi",
+  "learnMore": "Saznaj više"
+}

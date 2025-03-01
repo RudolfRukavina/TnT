@@ -5,8 +5,11 @@ import { BiBus, BiEuro, BiTaxi } from "react-icons/bi";
 import { GrBike } from "react-icons/gr";
 import Image from "next/image";
 import { IoCardOutline } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 export default function HeroImage() {
+  const t = useTranslations("ContactForm");
+
   return (
     <div className="relative w-full lg:w-[400px] h-[300px]   ">
       <Image
@@ -27,7 +30,7 @@ export default function HeroImage() {
       {/* blob text */}
       <div className="absolute flex flex-col items-center top-20 left-14 font-semibold  text-bgColor">
         <p className="text-2xl tracking-widest">0-24</p>
-        <p className="tracking-widest">PON-NED</p>
+        <p className="tracking-widest uppercase ">{t("workingDays")}</p>
       </div>
 
       {/* services list */}
@@ -43,14 +46,14 @@ export default function HeroImage() {
           <span className="text-yellowPrimary">
             <PiVan />
           </span>{" "}
-          Transferi
+          {t("transferi")}
         </p>
         <p className="flex items-center gap-1 ">
           {" "}
           <span className="text-yellowPrimary">
             <BiBus />
           </span>
-          Ekskurzije
+          {t("ekskurzije")}
         </p>
         <p className="flex items-center gap-1">
           {" "}

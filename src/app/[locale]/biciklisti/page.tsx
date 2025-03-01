@@ -2,6 +2,7 @@ import PageSendButton from "@/components/PageSendButton";
 import PageTitle from "@/components/PageTitle";
 import SocialContacts from "@/components/SocialContacts";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -9,19 +10,15 @@ export const metadata: Metadata = {
   title: "Bike Taxi",
 };
 
-export default function page() {
+export default function Page() {
+  const t = useTranslations("BikeTaxi");
+
   return (
     <div className="px-4 pb-12 pt-6 lg:pb-28 lg:pt-16">
       <PageTitle title="Bike Taxi" />
       <div className="flex flex-col text-center items-center gap-2 mb-6 opacity-70 max-w-xl lg:mx-auto">
-        <p>
-          Strastveni ste ljubitelj biciklizma? Tražite prijevoz koji podržava
-          vašu avanturu?
-        </p>
-        <p>
-          Prepustite nama brigu o prijevozu vaših bicikala, a vi se bezbrižno
-          posvetite uživanju u vožnji kroz očaravajuće istarske krajolike.
-        </p>
+        <p>{t("firstParagraph")}</p>
+        <p>{t("secondaParagprah")}</p>
       </div>
 
       <div className="grid gap-1 grid-cols-2 max-w-sm mx-auto text-sm font-semibold opacity-50 mb-4 ">

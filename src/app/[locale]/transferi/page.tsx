@@ -2,26 +2,22 @@ import PageSendButton from "@/components/PageSendButton";
 import PageTitle from "@/components/PageTitle";
 import SocialContacts from "@/components/SocialContacts";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import { IoLocationOutline } from "react-icons/io5";
 
 export const metadata: Metadata = {
   title: "Transferi",
 };
 
-export default function page() {
+export default function Page() {
+  const t = useTranslations("Transfers");
+
   return (
     <div className="px-4 pb-12 pt-6 lg:pb-28 lg:pt-16">
-      <PageTitle title="Transferi" />
+      <PageTitle title={t("title")} />
       <div className="flex flex-col text-center items-center gap-2 mb-6 opacity-70 max-w-xl lg:mx-auto">
-        <p>
-          Trebate pouzdan prijevoz do zračne luke ili profesionalni poslovni
-          transfer? Taxi Poreč City brine o svim vašim potrebama.
-        </p>
-        <p>
-          Uživajte u udobnosti naših besprijekorno održavanih vozila i
-          prepustite se ljubaznom osoblju koje čini svako putovanje ugodnim
-          iskustvom.
-        </p>
+        <p>{t("firstParagraph")}</p>
+        <p>{t("secondaParagprah")}</p>
       </div>
 
       <div className="grid gap-1 grid-cols-2 max-w-sm mx-auto justify-center text-sm font-semibold opacity-50 mb-4 ">

@@ -9,14 +9,18 @@ import { BiBus, BiTaxi } from "react-icons/bi";
 import { PiVan } from "react-icons/pi";
 import { GrBike } from "react-icons/gr";
 import Subtitle from "./Subtitle";
+import { useTranslations } from "next-intl";
 
 export default function Services() {
+  const t = useTranslations("Services");
+  const tHelper = useTranslations("ContactForm");
+
   return (
     <section
       className="border-t lg:border-none border-t-textColor border-opacity-30 p-4 w-full pb-12 pt-12 flex flex-col gap-10"
       id="services"
     >
-      <Subtitle first="naše" second="usluge" />
+      <Subtitle first={t("title1")} second={t("title2")} />
 
       <div className="text-center">
         <div className="flex items-center gap-2 justify-center text-yellowPrimary mb-2 ">
@@ -26,14 +30,11 @@ export default function Services() {
           <GrBike />
         </div>
         <div className="flex flex-col gap-1 items-center mb-4">
-          <p className=" opacity-70">
-            Tražite pouzdan taxi, prijevoz do zračne luke ili savršen izlet? Na
-            pravom ste mjestu!
-          </p>
+          <p className=" opacity-70">{t("message1")}</p>
           <p>
-            Stojimo vam na raspolaganju{" "}
+            {t("message2")}{" "}
             <span className="border-b border-b-yellowPrimary">
-              0-24 - 7 dana u tjednu!
+              0-24 - {t("message3")}
             </span>
           </p>
         </div>
@@ -58,16 +59,16 @@ export default function Services() {
         >
           <SwiperSlide>
             <SwiperItem
-              title="Transferi"
-              description="Pouzdani transferi za svaku priliku. Osiguravamo udoban prijevoz do zračnih luka u regiji i inozemstvu."
+              title={tHelper("transferi")}
+              description={t("descriptionTrans")}
               src="/traffic.png"
               link="/transferi"
             />
           </SwiperSlide>
           <SwiperSlide>
             <SwiperItem
-              title="Ekskurzije"
-              description="Otkrijte uzbudljive izlete diljem istarske rivijere. Podarite sebi i svojim najdražima nezaboravno iskustvo."
+              title={tHelper("ekskurzije")}
+              description={t("descriptionEks")}
               src="/mercedes.png"
               link="/ekskurzije"
             />
@@ -75,7 +76,7 @@ export default function Services() {
           <SwiperSlide>
             <SwiperItem
               title="Bixe Taxi"
-              description="Prijevoz bicikala na željenu lokaciju – savršeno za ljubitelje biciklizma i sportske klubove. Prepustite se avanturi!"
+              description={t("descriptionBike")}
               src="/bike.png"
               link="/biciklisti"
             />

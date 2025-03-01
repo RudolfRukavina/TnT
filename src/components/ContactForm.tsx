@@ -5,6 +5,7 @@ import { LuRocket } from "react-icons/lu";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { motion } from "framer-motion";
 import Subtitle from "./Subtitle";
+import { useTranslations } from "next-intl";
 
 const MAIL: string = "an.blaskovic@gmail.com";
 
@@ -30,16 +31,18 @@ export default function ContactForm() {
   const [service, setService] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
+  const t = useTranslations("ContactForm");
+
   return (
     <section id="contact" className="my-10">
-      <Subtitle first="pošaljite" second="upit" className="mb-8" />
+      <Subtitle first={t("title1")} second={t("title2")} className="mb-8" />
 
       <form
         onSubmit={handleSubmit}
         className="flex flex-col items-center px-10 max-w-md mx-auto gap-2"
       >
         <div className="flex flex-col w-full">
-          <label htmlFor="service">Usluga za koju ste zaintersirani</label>
+          <label htmlFor="service">{t("usluga")}</label>
           <div className="relative w-full">
             <select
               value={service}
@@ -47,10 +50,10 @@ export default function ContactForm() {
               className="bg-bgSecondary w-full rounded-md cursor-pointer px-4 py-2 appearance-none focus"
               id="service"
             >
-              <option>Odaberi</option>
+              <option>{t("placeholder")}</option>
               <option>Taxi</option>
-              <option>Transferi</option>
-              <option>Ekskurzija</option>
+              <option>{t("transferi")}</option>
+              <option>{t("ekskurzije")}</option>
               <option>Bike taxi</option>
             </select>
             <div className="absolute top-1/2 -translate-y-1/2 right-2 text-xl text-secondary">
@@ -59,19 +62,19 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="flex flex-col w-full">
-          <label htmlFor="name">Vaše ime</label>
+          <label htmlFor="name">{t("name")}</label>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="bg-bgSecondary cursor-pointer rounded-md px-4 py-2 focus"
             type="text"
-            placeholder="Ime i prezime"
+            placeholder={t("namePlaceholder")}
             id="name"
           />
         </div>
 
         <div className="flex flex-col w-full">
-          <label htmlFor="message">Vaša poruka</label>
+          <label htmlFor="message">{t("message")}</label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -85,11 +88,11 @@ export default function ContactForm() {
         <motion.button
           whileHover={{ scale: 0.97 }}
           whileTap={{ scale: 0.94 }}
-          className="bg-yellowPrimary flex items-center gap-1 px-2 py-1 rounded-md text-bgColor font-semibold mt-2"
+          className="bg-yellowPrimary  capitalize flex items-center gap-1 px-2 py-1 rounded-md text-bgColor font-semibold mt-2"
           type="submit"
         >
           <LuRocket />
-          Pošalji
+          {t("send")}
         </motion.button>
       </form>
     </section>

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { FaArrowRight } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 interface ISwiperItem {
   src: string;
@@ -15,6 +16,8 @@ export default function SwiperItem({
   description,
   link,
 }: ISwiperItem) {
+  const t = useTranslations();
+
   return (
     <div className=" min-h-full   min-w-full   ">
       <div className="relative h-40">
@@ -32,7 +35,7 @@ export default function SwiperItem({
           href={link}
           className="bg-yellowPrimary flex items-center gap-1  mt-2 px-2 py-1 rounded-lg text-bgColor font-semibold "
         >
-          Saznaj vise <FaArrowRight />
+          {t("learnMore")} <FaArrowRight />
         </Link>
       </div>
     </div>

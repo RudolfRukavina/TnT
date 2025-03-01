@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LuRocket } from "react-icons/lu";
+import { useTranslations } from "next-intl";
 
 const MAIL: string = "an.blaskovic@gmail.com";
 
@@ -18,6 +19,8 @@ export default function PageSendButton({ about }: { about: string }) {
     tempLink.remove();
   }
 
+  const t = useTranslations();
+
   return (
     <div className="w-full flex justify-center mt-4">
       {" "}
@@ -28,7 +31,7 @@ export default function PageSendButton({ about }: { about: string }) {
         className="bg-yellowPrimary flex items-center gap-1 px-2 rounded-md text-bgColor font-semibold py-1 mx-auto"
       >
         <LuRocket />
-        Pošalji upit
+        {t("sendRequest")}
       </motion.button>
     </div>
   );

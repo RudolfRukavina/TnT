@@ -2,25 +2,22 @@ import PageSendButton from "@/components/PageSendButton";
 import PageTitle from "@/components/PageTitle";
 import SocialContacts from "@/components/SocialContacts";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import { IoLocationOutline } from "react-icons/io5";
 
 export const metadata: Metadata = {
   title: "Ekskurzije",
 };
 
-export default function page() {
+export default function Page() {
+  const t = useTranslations("Excursions");
+
   return (
     <div className="px-4 pb-12 pt-6 lg:pb-28 lg:pt-16">
-      <PageTitle title="Ekskurzije" />
+      <PageTitle title={t("title")} />
       <div className="flex flex-col text-center items-center gap-2 mb-6 opacity-70 max-w-xl lg:mx-auto">
-        <p>
-          Otkrijte čari Istre uz nezaboravne ekskurzije s Poreč City Taxijem.
-        </p>
-        <p>
-          Želite li istražiti sunčani Kamenjak, šetati zidinama Motovuna ili
-          upoznati skrivena blaga regije? Obratite nam se s povjerenjem i
-          rezervirajte svoj savršeni izlet već danas!
-        </p>
+        <p>{t("firstParagraph")}</p>
+        <p>{t("secondaParagprah")}</p>
       </div>
 
       <div className="grid gap-1 grid-cols-2 max-w-sm mx-auto text-sm font-semibold opacity-50 mb-4 ">

@@ -1,10 +1,13 @@
 import { HiOutlinePhone } from "react-icons/hi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import Logo from "@/components/Logo";
-import Link from "next/link";
+
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function Footer({ phone }: { phone: string }) {
   const year = new Date().getFullYear();
+  const t = useTranslations("Footer");
 
   return (
     <footer className="flex max-w-full text-sm flex-col border-t border-textColor border-opacity-30 gap-4 items-center justify-center py-4 lg:flex-row-reverse lg:gap-20  ">
@@ -54,7 +57,7 @@ export default function Footer({ phone }: { phone: string }) {
           <Logo size="small" />
         </div>
         <p className="mt-1 text-xs">&copy;{year} Poreč City Taxi & Transfer</p>
-        <p className="text-xs">Sva prava pridržana</p>
+        <p className="text-xs">{t("copyright")}</p>
       </div>
     </footer>
   );

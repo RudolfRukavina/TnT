@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 const variants = {
-  solid: "bg-yellowPrimary",
+  solid: "!bg-yellowPrimary/50 backdrop-blur-sm",
   transparent: "bg-transparent border-bgColor border",
 };
 

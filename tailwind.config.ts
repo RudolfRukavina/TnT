@@ -20,7 +20,8 @@ export default {
         secondary: "#D89D00",
       },
       backgroundImage: {
-        city: "url('/porec.jpeg')",
+        wawes: "url('/wawes.svg')",
+        testSlika: "url('/porec.jpg')",
       },
     },
   },

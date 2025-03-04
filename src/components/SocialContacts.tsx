@@ -2,9 +2,19 @@
 import { FaViber, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-export default function SocialContacts({ phone }: { phone: string }) {
+export default function SocialContacts({
+  phone,
+  className,
+}: {
+  phone: string;
+  className?: string;
+}) {
   return (
-    <div className="flex items-center gap-2 text-xl ">
+    <div
+      className={`flex items-center gap-2 text-xl ${
+        className ? className : ""
+      } `}
+    >
       <motion.a
         target="_blank"
         whileTap={{ opacity: 0.5 }}

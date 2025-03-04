@@ -48,7 +48,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li className="">
-          <MainCallButton phone="991985871" className="text-sm" />
+          <MainCallButton phone="991985871" className="text-sm   " />
         </li>
       </ul>
       <div className="flex items-center gap-8 text-sm  ">

@@ -22,13 +22,9 @@ export default function Home() {
       <BentoGrid />
 
       <div className="hidden lg:block border-b border-b-textColor border-opacity-30 "></div>
-      <div className="lg:grid-cols-2 max-w-7xl mx-auto gap-6  lg:px-16 lg:grid ">
-        {/* about us */}
-        <AboutUs />
 
-        {/* section our services */}
-        <Services />
-      </div>
+      {/* about us */}
+      <AboutUs />
 
       {/* section CTA */}
       <Cta phone="991985871" />

@@ -4,7 +4,10 @@ import MainCallButton from "./MainCallButton";
 
 export default function BentoGrid() {
   return (
-    <section id="bento" className=" bg-bgColor py-24 sm:py-32">
+    <section
+      id="bento"
+      className=" bg-wawesMob lg:bg-wawes bg-opacity-50 bg-no-repeat bg-cover py-24 sm:py-32"
+    >
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base/7 font-semibold text-secondary">
           Naše usluge
@@ -14,13 +17,13 @@ export default function BentoGrid() {
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative  lg:row-span-2">
-            <div className="absolute bg-white inset-px rounded-lg   lg:rounded-l-[2rem]"></div>
+            <div className="absolute bg-white  inset-px rounded-lg   lg:rounded-l-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-4xl font-semibold text-bgColor tracking-tight  max-lg:text-center">
+                <p className="mt-2 text-4xl  font-semibold text-bgColor tracking-tight  max-lg:text-center">
                   Transferi
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 max-w-lg text-gray-600 text-sm/6  max-lg:text-center">
                   Pouzdani i udobni transferi do bilo koje destinacije. Nudimo
                   privatne i grupne vožnje do zračnih luka, hotela i popularnih
                   lokacija, uz profesionalne vozače i vozila visoke klase.
@@ -52,13 +55,13 @@ export default function BentoGrid() {
             <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"></div>
           </div>
           <div className="relative  max-lg:row-start-1">
-            <div className="absolute bg-white inset-px rounded-lg shadow-xl shadow-secondary/10  max-lg:rounded-t-[2rem]"></div>
+            <div className="absolute  bg-white inset-px rounded-lg   max-lg:rounded-t-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-4xl text-bgColor font-semibold tracking-tight  max-lg:text-center">
                   Taxi Služba
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 max-w-lg text-gray-600 text-sm/6  max-lg:text-center">
                   Brza i sigurna taxi usluga dostupna 0-24. Bilo da trebate
                   kratku vožnju unutar grada ili dulji prijevoz, naši vozači
                   osiguravaju udobnost i točnost.
@@ -71,18 +74,21 @@ export default function BentoGrid() {
                   alt=""
                 />
               </div>
-              <MainCallButton phone="991985871" className="mx-auto mb-2" />
+              <MainCallButton
+                phone="991985871"
+                className="mx-auto mb-2 !bg-yellowPrimary"
+              />
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
           </div>
           <div className="relative  max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-            <div className="absolute bg-white inset-px rounded-lg  shadow-xl shadow-secondary/10"></div>
+            <div className="absolute  bg-white inset-px rounded-lg  "></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-4xl text-bgColor font-semibold tracking-tight max-lg:text-center">
                   Prijevoz bicikla
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 text-gray-600 max-w-lg text-sm/6  max-lg:text-center">
                   Specijalizirani prijevoz bicikala za rekreativce i
                   profesionalce. Bilo da planirate biciklističku turu ili
                   trebate prijevoz do startne lokacije, osiguravamo sigurno i
@@ -106,13 +112,13 @@ export default function BentoGrid() {
             <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
           </div>
           <div className="relative   lg:row-span-2">
-            <div className="absolute bg-white inset-px rounded-lg  shadow-xl shadow-secondary/10 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            <div className="absolute  bg-white inset-px rounded-lg   max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-bgColor text-4xl font-semibold   tracking-tight  max-lg:text-center">
+                <p className="mt-2 text-bgColor  text-4xl font-semibold   tracking-tight  max-lg:text-center">
                   Ekskurzije
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 text-gray-600 max-w-lg text-sm/6 max-lg:text-center">
                   Otkrijte najljepše destinacije kroz naše organizirane izlete.
                   Posjetite Plitvička jezera, Pulska Arena, Motovun, Grožnjan i
                   druge atrakcije uz stručno vođenje i maksimalnu udobnost.

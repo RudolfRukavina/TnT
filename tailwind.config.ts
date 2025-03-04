@@ -21,6 +21,7 @@ export default {
       },
       backgroundImage: {
         wawes: "url('/wawes.svg')",
+        wawesMob: "url('/blob-scene.svg')",
         testSlika: "url('/porec.jpg')",
       },
     },
